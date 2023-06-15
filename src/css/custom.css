@@ -6,29 +6,29 @@
 
 /* Useful generator: https://mdigi.tools/color-shades/#86bafe */
 :root {
-  --ifm-color-primary: hsl(202, 55%, 50%);
-  --ifm-color-primary-dark: hsl(202, 55%, 36%);
-  --ifm-color-primary-darker: hsl(202, 55%, 22%);
-  --ifm-color-primary-darkest: hsl(201, 56%, 7%);
-  --ifm-color-primary-light: hsl(202, 55%, 64%);
-  --ifm-color-primary-lighter: hsl(201, 55%, 78%);
-  --ifm-color-primary-lightest: hsl(201, 56%, 93%);
+  --ifm-color-primary: #1f70ad;
+  --ifm-color-primary-dark: #1c659c;
+  --ifm-color-primary-darker: #1a5f93;
+  --ifm-color-primary-darkest: #164e79;
+  --ifm-color-primary-light: #227bbe;
+  --ifm-color-primary-lighter: #2481c7;
+  --ifm-color-primary-lightest: #2f91da;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-  --navbar-bg-color: hsla(0, 0%, 100%, 50%);
+  --navbar-bg-color: hsla(0, 0%, 100%, 75%);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme="dark"] {
-  --ifm-color-primary: hsl(202, 55%, 55%);
-  --ifm-color-primary-dark: hsl(202, 55%, 41%);
-  --ifm-color-primary-darker: hsl(202, 55%, 27%);
-  --ifm-color-primary-darkest: hsl(201, 56%, 12%);
-  --ifm-color-primary-light: hsl(202, 55%, 69%);
-  --ifm-color-primary-lighter: hsl(201, 55%, 83%);
-  --ifm-color-primary-lightest: hsl(201, 56%, 98%);
+  --ifm-color-primary: #4db2fe;
+  --ifm-color-primary-dark: #2ca4fe;
+  --ifm-color-primary-darker: #1c9dfe;
+  --ifm-color-primary-darkest: #0184e6;
+  --ifm-color-primary-light: #6ec0fe;
+  --ifm-color-primary-lighter: #7ec7fe;
+  --ifm-color-primary-lightest: #b0ddff;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
-  --navbar-bg-color: hsla(0, 0%, 20%, 50%);
+  --navbar-bg-color: hsla(0, 0%, 20%, 75%);
 }
 
 @media (min-width: 997px) {

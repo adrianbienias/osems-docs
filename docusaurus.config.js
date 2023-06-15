@@ -54,6 +54,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      image: "img/osems-social-card.png",
       navbar: {
         title: "OSEMS",
         items: [
