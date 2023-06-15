@@ -28,11 +28,10 @@ function HomepageHeader() {
 }
 
 export default function Home() {
-  const { siteConfig } = useDocusaurusContext()
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />"
+      title={`Welcome to OSEMS!`}
+      description="Lower the costs of sending newsletters and autoresponders to minimum"
     >
       <HomepageHeader />
       <main>
