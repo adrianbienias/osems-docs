@@ -31,9 +31,11 @@
   --navbar-bg-color: hsla(0, 0%, 20%, 50%);
 }
 
-.navbar {
-  backdrop-filter: blur(10px);
-  background-color: var(--navbar-bg-color);
+@media (min-width: 997px) {
+  .navbar {
+    backdrop-filter: blur(10px);
+    background-color: var(--navbar-bg-color);
+  }
 }
 
 body {
