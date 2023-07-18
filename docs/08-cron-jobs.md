@@ -10,7 +10,7 @@ OSEMS uses a built-in Node.js cron job scheduler, so you don't need to worry abo
 
 It's important to point out that some serverless hosting providers (e.g. Vercel), don't allow you to run cron jobs with frequency that OSEMS required.
 
-It's an important factor to be aware of when choosing hosting provider (DigitalOcean App Platform handles cron jobs with no issues).
+It's an important factor to be aware of when choosing hosting provider.
 
 In addition, hosting an app as serverless functions gives you a timeout limitations.
 

@@ -19,7 +19,11 @@ That's why I brought this software to life.
 | GetResponse            | Unlimited          | $79                            |
 | **OSEMS** + Amazon SES | Unlimited          | $5 + $1 per 10 000 emails sent |
 
-OSEMS is free of charge. $5 is the cost of hosting the app on [DigitalOcean App Platform](https://www.digitalocean.com/products/app-platform?refcode=80e257abf861) (by using this link you even get 60 days for free).
+OSEMS is free of charge. $5 is the estimated cost of hosting the app.
+
+For this app, personally I use and recommend [Railway](https://railway.app/).
+
+You can find a guide on how to easily deploy this app in [Going to production](./03-going-to-production.mdx).
 
 ## What this software does?
 
@@ -27,11 +31,7 @@ You can create lists, embed customized signup forms on your websites, send newsl
 
 OSEMS is free, but you need to host it somewhere and use SMTP server of your choice.
 
-For SMTP the best option (in my opinion) is [Amazon SES](https://aws.amazon.com/ses/) that offers sending emails for as low as $0.10 per 1000 outbound emails (you pay only for what you send).
-
-Besides that, storing millions of emails on your lists can costs you totally nothing if you decide to use [PlanetScale](https://planetscale.com/pricing) Hobby plan (5 GB database).
-
-The only fixed cost is a hosting that you need to use in order to have this app up and running. I recommend [DigitalOcean](https://www.digitalocean.com/products/app-platform?refcode=80e257abf861) App Platform which can cost you $5/month.
+For SMTP the best option (in my opinion) is [Amazon SES](https://aws.amazon.com/ses/). They offer sending emails for as low as $0.10 per 1000 outbound emails (you pay only for what you send).
 
 ## Bugs and features
 

@@ -1,0 +1,82 @@
+import Image from "@theme/IdealImage"
+import osems_railway_template from "/static/img/railway/osems_railway_template.png"
+import sign_in_with_github_to_deploy from "/static/img/railway/sign_in_with_github_to_deploy.png"
+import deploy_osems_railway_template from "/static/img/railway/deploy_osems_railway_template.png"
+import deploy_loading_screen from "/static/img/railway/deploy_loading_screen.png"
+import deploy_building_app from "/static/img/railway/deploy_building_app.png"
+import deploy_ready from "/static/img/railway/deploy_ready.png"
+import osems_login_screen from "/static/img/railway/osems_login_screen.png"
+
+# Going to production
+
+## Railway
+
+[Railway](https://railway.app/) is (as far as I know) the easiest and the fastest way to spin up the OSEMS app production ready (and they offer a free trial account with $5 credits).
+
+Click the following button to deploy the app:
+
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/NXWkyl?referralCode=P4fhlv)
+
+You should land on a site that looks like this:
+
+<Image img={osems_railway_template} />
+
+Click "Deploy Now".
+
+Next, sign in with GitHub:
+
+<Image img={sign_in_with_github_to_deploy} />
+
+Accept terms for creating an account and allow to authorize Railway GitHub App.
+
+On the next page, you need to fill in environment variables:
+
+<Image img={deploy_osems_railway_template} />
+
+- `EMAIL_SERVER_PASSWORD`: SMTP password
+- `INITIAL_ADMIN_EMAIL`: Admin email (to receive a login link to the app)
+- `EMAIL_SERVER_PORT`: SMTP port, e.g. 587
+- `EMAIL_SERVER_USER`: SMTP user
+- `EMAIL_SERVER_HOST`: SMTP host
+- `JWT_SECRET`: Generate it at: https://generate-random.org/string-generator?length=64
+- `NEXT_PUBLIC_EMAIL_FROM`: Email address allowed by SMTP server
+
+**Important**: you cannot send emails introducing yourself as "whoever@you.want" (`NEXT_PUBLIC_EMAIL_FROM`) if it's not an email registered on the SMTP server.
+
+It has to be your email, connected with the SMTP account you authenticate to with `EMAIL_SERVER_USER` and `EMAIL_SERVER_PASSWORD`.
+
+You can put the email also in format "**Your Name &lt;you&commat;example.com&gt;**", so emails from you will be shown in inboxes by that name.
+
+For development or testing purpose you can use [Ethereal Email](https://ethereal.email/create), that will generate you temporary SMTP details. In that case `NEXT_PUBLIC_EMAIL_FROM` and `INITIAL_ADMIN_EMAIL` doesn't need to be real.
+
+Next, you click deploy and wait.
+
+<Image img={deploy_loading_screen} />
+
+<Image img={deploy_building_app} />
+
+The app will be ready when deployment item becomes green, showing you an automatically generated subdomain of your app.
+
+<Image img={deploy_ready} />
+
+Click on that subdomain to be redirected to it.
+
+Then you should see a login screen of the up and running OSEMS app:
+
+<Image img={osems_login_screen} />
+
+Enter email you've provided as `INITIAL_ADMIN_EMAIL` and check your email inbox.
+
+In case of using [Ethereal Email](https://ethereal.email/), go to [Messages](https://ethereal.email/messages).
+
+You should find "Confirm logging in" message with "Click here to log in" link inside.
+
+Click it and you should be redirected to OSEMS dashboard.
+
+That's it 🎉!
+
+Now you have up and running Open Source Email Marketing Service on Railway infrastructure.
+
+You can start creating mailing lists, using signup forms, adding contacts, sending newsletters and creating autoresponders.
+
+In case of any issues, just [report them](https://github.com/adrianbienias/osems/issues).

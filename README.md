@@ -6,5 +6,10 @@ It's a documentation repository for [Open Source Email Marketing Software](https
 
 ## TODOs
 
+- [ ] Include Google Analytics
+  - https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-google-gtag
+- [ ] Add tutorial for using Amazon SES https://sendportal.io/docs/v2/email-services/aws
+- [ ] Add search https://github.com/praveenn77/docusaurus-lunr-search
 - [ ] Document API routes
-- [ ] Add tutorial for using Amazon SES
+  - https://redocusaurus.vercel.app/
+  - https://docusaurus-openapi.netlify.app/
